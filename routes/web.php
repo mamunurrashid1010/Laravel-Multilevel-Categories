@@ -13,5 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-# Categories
+# Categories list view
 Route::get('/',[\App\Http\Controllers\CategoryController::class,'index']);
+# Categories table view
+Route::get('/tableView',[\App\Http\Controllers\CategoryController::class,'tableView']);
